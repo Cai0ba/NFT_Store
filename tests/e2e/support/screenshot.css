@@ -1,0 +1,5 @@
+/* Aplicado só durante toHaveScreenshot: tira da imagem o que não é da interface avaliada. */
+[data-kurio-devtools],
+[data-sonner-toaster] {
+  display: none !important;
+}

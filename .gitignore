@@ -1,0 +1,16 @@
+node_modules
+dist
+*.local
+.env
+.DS_Store
+playwright-report
+test-results
+blob-report
+.lighthouseci
+.vscode/*
+!.vscode/extensions.json
+
+# Lighthouse: só as cópias versionadas (latest*, baseline) entram no repositório
+lighthouse-reports/20*/
+lighthouse-reports/lhci
+.tanstack

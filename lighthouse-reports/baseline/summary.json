@@ -1,0 +1,395 @@
+{
+  "generatedAt": "2026-10-30T16:12:27.917Z",
+  "baseUrl": "http://localhost:4183",
+  "runsPerPage": 3,
+  "calibration": null,
+  "mockScenario": "default",
+  "targets": {
+    "performance": 90,
+    "accessibility": 95,
+    "best-practices": 95,
+    "seo": 90
+  },
+  "environment": {
+    "node": "v22.23.4",
+    "lighthouse": "13.6.0",
+    "chromeLauncher": "0.13.4",
+    "browser": "Google Chrome for Testing 153.0.8010.12",
+    "chromePath": "/opt/pw-browsers/chromium-1243/chrome-linux64/chrome",
+    "chromeFlags": [
+      "--headless=new",
+      "--no-sandbox",
+      "--disable-gpu"
+    ],
+    "hostUserAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.0.0 Safari/537.36",
+    "os": "Linux 6.18.44-fc-v185 (x64)",
+    "cpu": "Intel(R) Xeon(R) Processor @ 2.80GHz",
+    "cpuCount": 2,
+    "memoryGb": 8,
+    "loadAverage": {
+      "start": [
+        2.67,
+        4.5,
+        4.72
+      ],
+      "end": [
+        6.89,
+        5.27,
+        4.95
+      ]
+    },
+    "benchmarkIndex": 1179.25
+  },
+  "conditions": {
+    "mobile": {
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "rttMs": 150,
+      "throughputKbps": 1638.4,
+      "cpuSlowdownMultiplier": 4,
+      "viewport": "412x823 @1.75x (mobile)",
+      "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36"
+    },
+    "desktop": {
+      "formFactor": "desktop",
+      "throttlingMethod": "simulate",
+      "rttMs": 40,
+      "throughputKbps": 10240,
+      "cpuSlowdownMultiplier": 1,
+      "viewport": "1350x940 @1x",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+    }
+  },
+  "results": [
+    {
+      "page": "home",
+      "profile": "mobile",
+      "url": "http://localhost:4183/",
+      "runs": [
+        {
+          "run": 1,
+          "report": "home-mobile-run1",
+          "categories": {
+            "performance": 48,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 100
+          },
+          "metrics": {
+            "largest-contentful-paint": 6071.899000000002,
+            "cumulative-layout-shift": 0,
+            "total-blocking-time": 2792.000000000001,
+            "first-contentful-paint": 1280.844,
+            "speed-index": 3060.0439740776987
+          },
+          "warnings": []
+        },
+        {
+          "run": 2,
+          "report": "home-mobile-run2",
+          "categories": {
+            "performance": 46,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 100
+          },
+          "metrics": {
+            "largest-contentful-paint": 6090.5545999999995,
+            "cumulative-layout-shift": 0,
+            "total-blocking-time": 4680.9443249999995,
+            "first-contentful-paint": 1253.7773,
+            "speed-index": 3820.310346969868
+          },
+          "warnings": []
+        },
+        {
+          "run": 3,
+          "report": "home-mobile-run3",
+          "categories": {
+            "performance": 47,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 100
+          },
+          "metrics": {
+            "largest-contentful-paint": 6295.625599999999,
+            "cumulative-layout-shift": 0,
+            "total-blocking-time": 2679.7967999999996,
+            "first-contentful-paint": 1330.8128,
+            "speed-index": 3395.695761597394
+          },
+          "warnings": []
+        }
+      ],
+      "median": {
+        "categories": {
+          "performance": 47,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100
+        },
+        "metrics": {
+          "largest-contentful-paint": 6090.5545999999995,
+          "cumulative-layout-shift": 0,
+          "total-blocking-time": 2792.000000000001,
+          "first-contentful-paint": 1280.844,
+          "speed-index": 3395.695761597394
+        }
+      }
+    },
+    {
+      "page": "home",
+      "profile": "desktop",
+      "url": "http://localhost:4183/",
+      "runs": [
+        {
+          "run": 1,
+          "report": "home-desktop-run1",
+          "categories": {
+            "performance": 53,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 100
+          },
+          "metrics": {
+            "largest-contentful-paint": 2749.2375,
+            "cumulative-layout-shift": 0.0002079829092429586,
+            "total-blocking-time": 1003.5,
+            "first-contentful-paint": 695.53,
+            "speed-index": 1917.8564923993554
+          },
+          "warnings": []
+        },
+        {
+          "run": 2,
+          "report": "home-desktop-run2",
+          "categories": {
+            "performance": 77,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 100
+          },
+          "metrics": {
+            "largest-contentful-paint": 2437.8305000000005,
+            "cumulative-layout-shift": 0.0002079829092429586,
+            "total-blocking-time": 229,
+            "first-contentful-paint": 647.523,
+            "speed-index": 1470.787722914864
+          },
+          "warnings": []
+        },
+        {
+          "run": 3,
+          "report": "home-desktop-run3",
+          "categories": {
+            "performance": 48,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 100
+          },
+          "metrics": {
+            "largest-contentful-paint": 3831.5412499999984,
+            "cumulative-layout-shift": 0.0002079829092429586,
+            "total-blocking-time": 744,
+            "first-contentful-paint": 923.2974999999999,
+            "speed-index": 2117.8652086226075
+          },
+          "warnings": []
+        }
+      ],
+      "median": {
+        "categories": {
+          "performance": 53,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100
+        },
+        "metrics": {
+          "largest-contentful-paint": 2749.2375,
+          "cumulative-layout-shift": 0.0002079829092429586,
+          "total-blocking-time": 744,
+          "first-contentful-paint": 695.53,
+          "speed-index": 1917.8564923993554
+        }
+      }
+    },
+    {
+      "page": "detail",
+      "profile": "mobile",
+      "url": "http://localhost:4183/nft/emerald-ape-042",
+      "runs": [
+        {
+          "run": 1,
+          "report": "detail-mobile-run1",
+          "categories": {
+            "performance": 47,
+            "accessibility": 96,
+            "best-practices": 100,
+            "seo": 100
+          },
+          "metrics": {
+            "largest-contentful-paint": 5767.083500000001,
+            "cumulative-layout-shift": 0,
+            "total-blocking-time": 3809.8055,
+            "first-contentful-paint": 1200.926,
+            "speed-index": 3720.0125746457743
+          },
+          "warnings": []
+        },
+        {
+          "run": 2,
+          "report": "detail-mobile-run2",
+          "categories": {
+            "performance": 43,
+            "accessibility": 96,
+            "best-practices": 100,
+            "seo": 100
+          },
+          "metrics": {
+            "largest-contentful-paint": 7273.843650000001,
+            "cumulative-layout-shift": 0,
+            "total-blocking-time": 3825.5,
+            "first-contentful-paint": 1402.8193999999999,
+            "speed-index": 4728.245145487141
+          },
+          "warnings": []
+        },
+        {
+          "run": 3,
+          "report": "detail-mobile-run3",
+          "categories": {
+            "performance": 54,
+            "accessibility": 96,
+            "best-practices": 100,
+            "seo": 100
+          },
+          "metrics": {
+            "largest-contentful-paint": 5127.957200000001,
+            "cumulative-layout-shift": 0,
+            "total-blocking-time": 1600.499999999999,
+            "first-contentful-paint": 1064.9786,
+            "speed-index": 2561.194653983367
+          },
+          "warnings": []
+        }
+      ],
+      "median": {
+        "categories": {
+          "performance": 47,
+          "accessibility": 96,
+          "best-practices": 100,
+          "seo": 100
+        },
+        "metrics": {
+          "largest-contentful-paint": 5767.083500000001,
+          "cumulative-layout-shift": 0,
+          "total-blocking-time": 3809.8055,
+          "first-contentful-paint": 1200.926,
+          "speed-index": 3720.0125746457743
+        }
+      }
+    },
+    {
+      "page": "detail",
+      "profile": "desktop",
+      "url": "http://localhost:4183/nft/emerald-ape-042",
+      "runs": [
+        {
+          "run": 1,
+          "report": "detail-desktop-run1",
+          "categories": {
+            "performance": 78,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 100
+          },
+          "metrics": {
+            "largest-contentful-paint": 1847.0050749999996,
+            "cumulative-layout-shift": 0.08541880995038774,
+            "total-blocking-time": 284,
+            "first-contentful-paint": 486.54729999999995,
+            "speed-index": 1182.498004797068
+          },
+          "warnings": []
+        },
+        {
+          "run": 2,
+          "report": "detail-desktop-run2",
+          "categories": {
+            "performance": 50,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 100
+          },
+          "metrics": {
+            "largest-contentful-paint": 4446.033,
+            "cumulative-layout-shift": 0.0003151690317774549,
+            "total-blocking-time": 562.5,
+            "first-contentful-paint": 1102.596,
+            "speed-index": 1876.0138201274247
+          },
+          "warnings": []
+        },
+        {
+          "run": 3,
+          "report": "detail-desktop-run3",
+          "categories": {
+            "performance": 74,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 100
+          },
+          "metrics": {
+            "largest-contentful-paint": 2110.0817500000003,
+            "cumulative-layout-shift": 0.08541880995038774,
+            "total-blocking-time": 308.62149999999997,
+            "first-contentful-paint": 548.7570000000001,
+            "speed-index": 1325.400447557254
+          },
+          "warnings": []
+        }
+      ],
+      "median": {
+        "categories": {
+          "performance": 74,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100
+        },
+        "metrics": {
+          "largest-contentful-paint": 2110.0817500000003,
+          "cumulative-layout-shift": 0.08541880995038774,
+          "total-blocking-time": 308.62149999999997,
+          "first-contentful-paint": 548.7570000000001,
+          "speed-index": 1325.400447557254
+        }
+      }
+    }
+  ],
+  "belowTarget": [
+    {
+      "page": "home",
+      "profile": "mobile",
+      "category": "performance",
+      "median": 47
+    },
+    {
+      "page": "home",
+      "profile": "desktop",
+      "category": "performance",
+      "median": 53
+    },
+    {
+      "page": "detail",
+      "profile": "mobile",
+      "category": "performance",
+      "median": 47
+    },
+    {
+      "page": "detail",
+      "profile": "desktop",
+      "category": "performance",
+      "median": 74
+    }
+  ]
+}

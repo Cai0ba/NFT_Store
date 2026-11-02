@@ -1,0 +1,9 @@
+dist
+public/mockServiceWorker.js
+src/routeTree.gen.ts
+playwright-report
+test-results
+lighthouse-reports
+.lighthouseci
+package-lock.json
+tests/**/*-snapshots

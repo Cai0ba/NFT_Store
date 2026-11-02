@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#140D0A" />
+    <meta
+      name="description"
+      content="Kurio é um marketplace de NFTs com curadoria: descubra, colecione e compre arte digital de criadores emergentes e consagrados."
+    />
+    <title>Kurio — Marketplace de NFTs</title>
+    <script>
+      // A arte do hero da Início é estática (HERO.artwork): baixa já, sem esperar o JS e o worker do MSW.
+      if (location.pathname === '/') {
+        for (const [media, attrs] of [
+          ['(max-width: 767.98px)', { href: '/art/emerald-400.webp' }],
+          [
+            '(min-width: 768px)',
+            {
+              imageSrcset: '/art/emerald-400.webp 400w, /art/emerald-800.webp 800w',
+              imageSizes: '(min-width: 1024px) 446px, 320px',
+            },
+          ],
+        ]) {
+          const link = Object.assign(
+            document.createElement('link'),
+            { rel: 'preload', as: 'image', media, fetchPriority: 'high' },
+            attrs,
+          )
+          document.head.appendChild(link)
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

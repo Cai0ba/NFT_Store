@@ -11,7 +11,7 @@ declare global {
 }
 
 /**
- * Wrapper tipado de `window.__kurio`. Tudo roda dentro da página: os eventos de tempo real saem do
+ * Wrapper  tipado de `window.__kurio`. Tudo roda dentro da página: os eventos de tempo real saem do
  * servidor simulado pelo socket.io-client real, e as mudanças de dados passam pelo mesmo "banco" do REST.
  */
 export class KurioDriver {
